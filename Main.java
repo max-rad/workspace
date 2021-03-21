@@ -25,7 +25,7 @@ public class Main {
         }
 
         // Проверка на специальные символы, кроме [, ]
-        String regex = "[!\"#$%&'()*+,-./:;<=>?@^_`{|}~]+";
+        String regex = "[!\"#$%&'()*+,-./:;<=>?@^_`{|}~]";
         if (Pattern.compile(regex).matcher(input).find()) {
             throw new IllegalArgumentException();
         }
